@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('step2') {
+      steps {
+        echo '"IBM_WebAppDevelopment1" & "Status is Successful"'
+      }
+    }
+
   }
 }
