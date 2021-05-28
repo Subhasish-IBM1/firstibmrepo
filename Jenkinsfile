@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('step3') {
+      steps {
+        echo 'Status is Successful'
+      }
+    }
+
   }
 }
