@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'sample123'
+    }
+
+  }
   stages {
     stage('sample1') {
       steps {
@@ -8,5 +13,8 @@ pipeline {
       }
     }
 
+  }
+  environment {
+    subhasish = '123'
   }
 }
